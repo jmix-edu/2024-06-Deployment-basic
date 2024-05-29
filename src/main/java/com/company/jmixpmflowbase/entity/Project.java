@@ -27,6 +27,9 @@ public class Project {
     @Column(name = "NAME", nullable = false)
     private String name;
 
+    @Column(name = "DEFAULT_PROJECT")
+    private Boolean defaultProject = false;
+
     @Column(name = "START_DATE")
     private LocalDate startDate;
 
@@ -44,6 +47,14 @@ public class Project {
     @Composition
     @OneToMany(mappedBy = "project")
     private List<com.company.jmixpmflowbase.entity.Task> tasks;
+
+    public Boolean getDefaultProject() {
+        return defaultProject;
+    }
+
+    public void setDefaultProject(Boolean defaultProject) {
+        this.defaultProject = defaultProject;
+    }
 
     public ProjectStatus getStatus() {
         return status == null ? null : ProjectStatus.fromId(status);

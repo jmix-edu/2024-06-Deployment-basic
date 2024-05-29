@@ -8,3 +8,5 @@ This project contains:
 - Liquibase changelogs for init and fill data model - 3 Users, 2 Projects with 3 Tasks in each (6 Tasks in total)
 
 Project may be used as a basic Flow project for all trainings (almost all at least)
+
+This particular version is prepared for Deployment basic training theme

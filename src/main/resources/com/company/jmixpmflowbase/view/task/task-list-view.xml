@@ -37,6 +37,7 @@
             <button id="createBtn" action="tasksDataGrid.create"/>
             <button id="editBtn" action="tasksDataGrid.edit"/>
             <button id="removeBtn" action="tasksDataGrid.remove"/>
+            <button action="tasksDataGrid.importTasks"/>
             <simplePagination id="pagination" dataLoader="tasksDl"/>
         </hbox>
         <dataGrid id="tasksDataGrid"
@@ -48,6 +49,7 @@
                 <action id="create" type="list_create"/>
                 <action id="edit" type="list_edit"/>
                 <action id="remove" type="list_remove"/>
+                <action id="importTasks" icon="FILE_ADD" text="msg://taskListView.import"/>
             </actions>
             <columns resizable="true">
                 <column property="name"/>

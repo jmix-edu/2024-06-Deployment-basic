@@ -54,6 +54,7 @@
                 <column property="endDate"/>
                 <column property="status"/>
                 <column property="manager"/>
+                <column property="defaultProject"/>
             </columns>
         </dataGrid>
         <hbox id="lookupActions" visible="false">

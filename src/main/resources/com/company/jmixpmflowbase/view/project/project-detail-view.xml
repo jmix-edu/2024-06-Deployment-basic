@@ -32,6 +32,7 @@
                     <action id="entityClear" type="entity_clear"/>
                 </actions>
             </entityPicker>
+            <checkbox id="defaultProjectField" property="defaultProject"/>
         </formLayout>
         <h4 text="msg://com.company.jmixpmflowbase.entity/Project.tasks"/>
         <hbox id="buttonsPanel" classNames="buttons-panel">

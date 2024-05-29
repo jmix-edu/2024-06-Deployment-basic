@@ -28,9 +28,8 @@ public class Task {
     @Column(name = "NAME", nullable = false)
     private String name;
 
-    @NotNull
-    @JoinColumn(name = "ASSIGNEE_ID", nullable = false)
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "ASSIGNEE_ID")
+    @ManyToOne(fetch = FetchType.LAZY)
     private User assignee;
 
     @Column(name = "START_DATE")
