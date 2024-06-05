@@ -1,6 +1,7 @@
 package com.company.jmixpmflowbase.view.task;
 
 import com.company.jmixpmflowbase.app.TaskImportService;
+import com.company.jmixpmflowbase.app.TaskImportServiceProd;
 import com.company.jmixpmflowbase.entity.Task;
 
 import com.company.jmixpmflowbase.view.main.MainView;
@@ -11,8 +12,6 @@ import io.jmix.flowui.kit.action.ActionPerformedEvent;
 import io.jmix.flowui.model.CollectionLoader;
 import io.jmix.flowui.view.*;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.List;
 
 @Route(value = "tasks", layout = MainView.class)
 @ViewController("Task_.list")
